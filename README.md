@@ -1,0 +1,2 @@
+# VeritasAI
+Google Hackathon Project
