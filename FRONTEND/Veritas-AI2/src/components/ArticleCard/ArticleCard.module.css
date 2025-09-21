@@ -1,0 +1,39 @@
+/* src/components/ArticleCard/ArticleCard.module.css */
+.card {
+  /* UPDATED: Changed background to a medium blue */
+  background-color: #5c6bc0; 
+  padding: 1.5rem;
+  /* UPDATED: Increased radius for the rounded "pill" shape */
+  border-radius: 24px;
+  /* UPDATED: Removed the shadow for a flatter look */
+  box-shadow: none;
+  transition: background-color 0.3s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.card:hover {
+  /* UPDATED: Changed hover effect from a lift to a subtle color change */
+  background-color: #7986cb;
+}
+
+.title {
+  /* UPDATED: Changed font to match the sans-serif design */
+  font-family: 'Lato', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: 0 0 0.75rem 0;
+  /* UPDATED: Changed text color to white */
+  color: #ffffff;
+  line-height: 1.4;
+}
+
+.description {
+  font-family: 'Lato', sans-serif;
+  font-size: 1rem;
+  /* UPDATED: Changed text color to a light grey/off-white */
+  color: #e0e0e0;
+  line-height: 1.6;
+  margin: 0;
+}

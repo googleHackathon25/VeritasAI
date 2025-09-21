@@ -1,0 +1,19 @@
+.navLink {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #555;
+  font-weight: bold;
+  padding-bottom: 5px;
+  border-bottom: 2px solid transparent;
+  transition: color 0.2s, border-bottom-color 0.2s;
+}
+
+.navLink:hover {
+  color: #000;
+}
+
+/* This style is applied automatically by NavLink when the link is active */
+.active {
+  color: #007bff; /* A blue color to indicate the active page */
+  border-bottom-color: #007bff;
+}

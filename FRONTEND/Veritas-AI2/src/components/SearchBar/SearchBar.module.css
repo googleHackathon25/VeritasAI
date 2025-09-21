@@ -1,0 +1,39 @@
+/* src/components/SearchBar/SearchBar.module.css */
+.searchContainer {
+  position: relative;
+  width: 100%;
+  max-width: 600px; /* Controls the max width of the search bar */
+  margin: 0 auto 2.5rem auto; /* Centers the bar and adds space below */
+}
+
+.searchIcon {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #757575; /* Icon color */
+  font-size: 1.2rem;
+}
+
+.searchInput {
+  width: 100%;
+  padding: 1.1rem 1.2rem 1.1rem 3.5rem; /* Left padding for icon */
+  border: none;
+  /* UPDATED: Pill shape */
+  border-radius: 50px; 
+  /* UPDATED: Grey background */
+  background-color: #e0e0e0;
+  font-size: 1rem;
+  font-family: 'Lato', sans-serif;
+  box-sizing: border-box;
+  color: #333;
+}
+
+.searchInput::placeholder {
+  color: #757575;
+}
+
+.searchInput:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #7986cb; /* Adds a focus ring */
+}

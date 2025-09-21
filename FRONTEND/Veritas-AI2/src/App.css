@@ -1,0 +1,40 @@
+/* src/App.css */
+body {
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+  background-color: #e8eaf6;
+  color: #1a202c;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex-grow: 1;
+  padding: 2.5rem 0; /* Increased top padding for space above search bar */
+  /* UPDATED: Gradient from light purple to dark blue */
+  background: linear-gradient(to bottom right, #d1c4e9, #283593);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Added article-grid styles here to keep App.js clean */
+.article-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+/* Apply the gradient to the main app container */
+.App {
+  background: linear-gradient(to bottom right, #d1c4e9, #6c7baf);
+  min-height: 100vh; /* Ensures the gradient covers the full screen height */
+  color: #333; /* Default text color for good contrast */
+}

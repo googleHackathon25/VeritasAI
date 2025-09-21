@@ -1,0 +1,70 @@
+.categoriesPageContainer {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  background-color: #ffffff;
+  font-family: sans-serif;
+}
+
+.contentArea {
+  flex-grow: 1;
+  overflow-y: auto;
+  box-sizing: border-box;
+  padding: 2.5rem;
+  background-color: #ffffff;
+}
+
+.newsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.newsCard {
+  color: white;
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(135deg, #4c669f, #3b5998 50%, #192f6a);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease-in-out;
+}
+
+.newsCard:hover {
+  transform: translateY(-5px);
+}
+
+.newsCardImage {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.newsCardContent {
+  padding: 1.5rem;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.newsCardContent h3 {
+  font-size: 1.2rem;
+  margin: 0 0 0.75rem 0;
+}
+
+.newsCardContent p {
+  font-size: 0.9rem;
+  line-height: 1.4;
+  opacity: 0.9;
+  margin: 0;
+}
+
+/* --- STYLE FOR THE NEW TITLE --- */
+.pageTitle {
+  font-family: "Georgia", "Times New Roman", serif;
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: #1a1a1a;
+  margin-bottom: 2rem; /* Adds space between title and cards */
+}
